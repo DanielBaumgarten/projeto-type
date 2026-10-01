@@ -21,3 +21,31 @@ function currencyFormatter(value: number, prefix: string = "R$"): string{
 
 console.log(currencyFormatter(199.9));
 console.log(currencyFormatter(199.922, "$"));
+
+type StatusOrder = "billed" | "paid" | "canceled";
+
+function updateStatus(status: StatusOrder): void{
+
+        console.log(`New status: ${status}`)
+}
+
+updateStatus("paid")
+
+function calcLength(input: string | number): number{
+    if(typeof input === "string"){
+        return input.length;
+    }
+    return input.toString().length;
+}
+console.log(calcLength(55694));
+console.log(calcLength("Hello World!"));
+
+const languages: string[] = ["C#", "Java", "JavaScript"];
+languages.push("PHP");
+
+let httpResponse: [number, string];
+
+httpResponse = [200, "ok"]
+
+let flexData: any = 10;
+flexData = "information";

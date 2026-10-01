@@ -15,4 +15,16 @@ function currencyFormatter(value, prefix = "R$") {
 }
 console.log(currencyFormatter(199.9));
 console.log(currencyFormatter(199.922, "$"));
+function updateStatus(status) {
+    console.log(`New status: ${status}`);
+}
+updateStatus("paid");
+function calcLength(input) {
+    if (typeof input === "string") {
+        return input.length;
+    }
+    return input.toString().length;
+}
+console.log(calcLength(55694));
+console.log(calcLength("Hello World!"));
 //# sourceMappingURL=primitivos.js.map
