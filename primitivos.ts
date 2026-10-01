@@ -12,3 +12,12 @@ function greeting(name: string): string{
 }
 
 console.log(greeting("Ana"));
+
+function currencyFormatter(value: number, prefix: string = "R$"): string{
+
+    return `${prefix} ${value.toFixed(2)}`;
+
+}
+
+console.log(currencyFormatter(199.9));
+console.log(currencyFormatter(199.922, "$"));

@@ -10,4 +10,9 @@ function greeting(name) {
     return `Olá ${name}!`;
 }
 console.log(greeting("Ana"));
+function currencyFormatter(value, prefix = "R$") {
+    return `${prefix} ${value.toFixed(2)}`;
+}
+console.log(currencyFormatter(199.9));
+console.log(currencyFormatter(199.922, "$"));
 //# sourceMappingURL=primitivos.js.map
