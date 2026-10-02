@@ -6,25 +6,4 @@ let price = 13.99;
 let product = "pastel";
 let phrase = `Olá, o valor do produto ${product} é R$ ${price}`;
 console.log(phrase);
-function greeting(name) {
-    return `Olá ${name}!`;
-}
-console.log(greeting("Ana"));
-function currencyFormatter(value, prefix = "R$") {
-    return `${prefix} ${value.toFixed(2)}`;
-}
-console.log(currencyFormatter(199.9));
-console.log(currencyFormatter(199.922, "$"));
-function updateStatus(status) {
-    console.log(`New status: ${status}`);
-}
-updateStatus("paid");
-function calcLength(input) {
-    if (typeof input === "string") {
-        return input.length;
-    }
-    return input.toString().length;
-}
-console.log(calcLength(55694));
-console.log(calcLength("Hello World!"));
 //# sourceMappingURL=primitivos.js.map
